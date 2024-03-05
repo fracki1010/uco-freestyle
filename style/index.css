@@ -33,6 +33,7 @@
     border-bottom-right-radius: 0.8rem;
 }
 
-.event ul{
+
+.event ul, .event p{
     text-shadow: black 2px 1px 1px;
 }

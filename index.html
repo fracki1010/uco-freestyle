@@ -19,7 +19,7 @@
           <div class="collapse navbar-collapse text-light" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active fs-5 fw-bold text-light opacity-50" aria-current="page" href="#">Home</a>
+                <a class="nav-link active fs-5 fw-bold text-light opacity-50" aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link fs-5 fw-bold text-light opacity-50" href="#">Artistas</a>
@@ -39,7 +39,8 @@
 </header>
 <body class="bg-dark">
     
-
+<div id="app">
+  
   <!--Carrusel-->
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner" style="height:24rem;">
@@ -68,39 +69,74 @@
     <div class="col m-3">
       <div class="card mb-4 rounded-4 shadow-sm border-0">
         <div class="card-header py-3 rounded-top-4" style="background-color: rgb(206, 142, 22);">
-          <h4 class="my-0 fw-normal">Artista</h4>
+          <h4 class="my-0 fw-normal">Seguidores y Publico</h4>
         </div>
         <div class="card-body artist text-light">
           <h1 class="card-title pricing-card-title">$29<small class="fw-light">/mo</small></h1>
           <ul class="list-unstyled mt-3 mb-4">
-            <li>30 users included</li>
-            <li>15 GB of storage</li>
-            <li>Phone and email support</li>
-            <li>Help center access</li>
+            <li>Producción audiovisual</li>
+            <li>Pago de contado</li>
+            <li>Por cuotas</li>
+            <li>Presupuestos personales</li>        
           </ul>
-          <button type="button" class="w-100 btn btn-lg" style="background-color: rgb(206, 142, 22);">Contact us</button>
+          <p>Detalle: grabación de audio y video.</p>
+          <p>
+            Esta inversión el artista contara con una sala de ensayo, contactos, participación en distintos show's, carne VIP para asistir a los encuentros realizados por la productora 
+          </p>
+          <button type="button" class="w-100 btn btn-lg" style="background-color: rgb(206, 142, 22);" @click="seguidoresYPublico()">Ver más</button>
         </div>
       </div>
     </div>
+
+
     <div class="col m-3">
       <div class="card mb-4 rounded-4 shadow-sm border-0">
         <div class="card-header py-3 rounded-top-4" style="background-color: rgb(206, 142, 22);">
-          <h4 class="my-0 fw-normal">Servicio de Eventos</h4>
+          <h4 class="my-0 fw-normal">Organizaciones</h4>
         </div>
         <div class="card-body event text-light">
           <h1 class="card-title pricing-card-title">$29<small class="fw-light">/mo</small></h1>
+          <p>Gran oportunidad para gestores de eventos, profesores de academias y/o organizadores
+             emergentes. Está membresía te permitirá gestionar todo lo referido a la técnica.
+          </p>
           <ul class="list-unstyled mt-3 mb-4">
-            <li>30 users included</li>
-            <li>15 GB of storage</li>
-            <li>Phone and email support</li>
-            <li>Help center access</li>
+            <li>Sonido</li>
+            <li>Luces</li>
+            <li>Fotografias</li>
+            <li>Videoclips</li>
+            <li>Equipo de trabajo</li>
+            <li>Dj's</li>
           </ul>
-          <button type="button" class="w-100 btn btn-lg" style="background-color: rgb(206, 142, 22);">Contact us</button>
+          <button type="button" class="w-100 btn btn-lg" style="background-color: rgb(206, 142, 22);">Ver más</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col m-3">
+      <div class="card mb-4 rounded-4 shadow-sm border-0">
+        <div class="card-header py-3 rounded-top-4" style="background-color: rgb(206, 142, 22);">
+          <h4 class="my-0 fw-normal">Eventos Sociales</h4>
+        </div>
+        <div class="card-body event text-light">
+          <h1 class="card-title pricing-card-title">$29<small class="fw-light">/mo</small></h1>
+          <p>
+            Increíble oportunidad con está membresía creada para las familias donde puedes presupuestar la fiesta que desees
+          </p>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Cumpleaños de 15</li>
+            <li>Casamientos</li>
+            <li>Baby Shower</li>
+            <li>Cumpleaños infantiles</li>
+            <li>Fiestas fin de año</li>
+          </ul>
+          <button type="button" class="w-100 btn btn-lg" style="background-color: rgb(206, 142, 22);">Ver más</button>
         </div>
       </div>
     </div>
   </div>
-
+  
+</div>
 </body>
 <footer class="text-light">
   <footer class="d-flex flex-wrap justify-content-around align-items-center py-3 my-4 border-top">
@@ -110,7 +146,7 @@
       </a>
       <span class="mb-3 mb-md-0">© 2023 Company, Inc</span>
     </div>
-
+    
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
       <i class="fa-brands fa-whatsapp fa-2xl m-1"></i>
       <i class="fa-brands fa-facebook fa-2xl m-1"></i>
@@ -119,4 +155,6 @@
 </footer>
 
 <script src="https://kit.fontawesome.com/3f4db2cda2.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="./scripts/index.js"></script>
 </html>
